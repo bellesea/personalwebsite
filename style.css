@@ -1,0 +1,327 @@
+@font-face {
+    font-family: messapia;
+    src: url(Fonts/messapia-regular-webfont.woff);
+}
+
+@font-face {
+    font-family: messapia;
+    src: url(Fonts/messapia-bold-webfont.woff);
+    font-weight: bold;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+/* home page */
+
+.homepage {
+    display: flex;
+}
+
+
+.homepage h1 {
+    font-family: 'messapia';
+    font-size: 80px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+@media screen and (max-width: 994px) {
+    .homepage .name {
+        padding-top: 200px;
+        text-align: center;
+        margin: none;
+        z-index: 2;
+        padding-bottom: 20px;
+    }
+    .homepage h1 {
+        font-family: 'messapia';
+        font-size: 50px;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    .homepage img {
+        display: none;
+        /*
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        margin: none;
+        top: 10%;
+        position: fixed;
+        z-index: 1;
+        opacity: 50%;
+        */
+    }
+    
+}
+
+@media screen and (min-width: 994px) {
+    .homepage .name {
+        display: inline-block;
+        width: 250px;
+        height: 700px;
+        padding: 10px;
+        padding-top: 260px;
+        text-align: right;
+        margin: none;
+    }
+
+    .homepage img {
+        width: 100%;
+        width: 100%;
+        min-width: 700px;
+        height: auto;
+        padding-top: 50px;
+        height: auto;
+        vertical-align: middle;
+        margin: none;
+        text-align: left;
+        position: relative;
+        left: -100px;
+    }
+
+}
+
+.homepage h2 {
+    padding-top: none;
+    vertical-align: middle;
+}
+
+.homepage .portrait {
+    text-align: left;
+    margin: none;
+}
+
+
+/*
+.homepage img:hover {
+    transform: rotate(0.015turn);
+}
+*/
+
+.homepage button {
+    font-family: 'messapia';
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #DBE7E4;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+/* nav bar */
+
+nav {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 75px;
+}
+
+nav img {
+    height: 100px;
+    width: 110px;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+ul {
+    float: right;
+    margin-right: 30px;
+    padding-top: 20px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: regular;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 466px) {
+    nav ul {
+        display: none;
+    }
+}
+
+/* social bar */
+
+.social-bar {
+    position: fixed;
+    top: 35%;
+    right: 0;
+    background-color: #FDE2E4;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.social-bar a {
+    display: block;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
+    color: #f0b7bb;
+}
+
+.social-bar a:hover {
+    color: #c78b8f;
+}
+
+/* about */
+
+.about {
+    width: 70%;
+    height: auto;
+    background-color:#FDE2E4;
+    margin-left: 5%;
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+}
+.about h2 {
+    font-family: 'messapia';
+    font-weight: bold;
+}
+
+.about .mantra{
+    font-weight: bold;
+}
+
+.about img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+@media screen and (max-width: 994px) {
+    .practice {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 994px) {
+
+    .practice {
+        width: 72%;
+        height: 230px;
+        margin-bottom: 60px;
+        position: absolute;
+        background-color: transparent;
+        z-index: 2;
+        top: 105%;
+        left: 6%;
+    }
+    
+    .practice img {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 130px;
+        width: auto;
+    }
+
+}
+/* resume */
+.resume {
+    width: 70%;
+    height: auto;
+    background-color:#DBE7E4;
+    margin-left: 24%;
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 20px;
+    align-content: flex-end;
+    position: relative;
+    z-index: 1;
+}
+.resume h2 {
+    font-family: 'messapia';
+    font-weight: bold;
+}
+
+.resume .resume-title {
+    font-weight: bold;
+}
+
+.resume .resume-left {
+    text-align: left;
+}
+
+.resume .resume-right {
+    text-align: right;
+}
+
+@media screen and (max-width: 994px) {
+    .resume-pic {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 994px) {
+    .resume-pic {
+        width: 72%;
+        height: 600px;
+        margin-bottom: 60px;
+        right: 7%;
+        background-color:transparent;
+        top: 135%;
+        z-index: 2;
+        position: absolute;
+    }
+    
+    .resume-pic img {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        height: 130px;
+        width: auto;
+    }
+
+}
+
+/*projects 
+.about {
+    width: 70%;
+    height: auto;
+    background-color:#FDE2E4;
+    margin-left: 5%;
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.about h2 {
+    font-family: 'messapia';
+    font-weight: bold;
+}
+
+.about .mantra{
+    font-weight: bold;
+}
+
+*/
