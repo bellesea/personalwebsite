@@ -216,8 +216,8 @@ ul li a:hover {
 
 .about img {
     position: absolute;
-    right: 0px;
-    bottom: 0px;
+    right: -20px;
+    bottom: -20px;
 }
 @media screen and (max-width: 994px) {
     .practice {
