@@ -11,7 +11,7 @@
 
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: white;
 }
 
@@ -42,7 +42,7 @@ body {
         font-weight: bold;
         vertical-align: middle;
     }
-
+/*
     .homepage img {
         display: none;
         /*
@@ -54,9 +54,9 @@ body {
         position: fixed;
         z-index: 1;
         opacity: 50%;
-        */
+        
     }
-    
+   */ 
 }
 
 @media screen and (min-width: 994px) {
@@ -86,7 +86,9 @@ body {
 
 }
 
+
 .homepage h2 {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     padding-top: none;
     vertical-align: middle;
 }
@@ -96,6 +98,15 @@ body {
     margin: none;
 }
 
+
+ @media screen and (max-width: 994px) {
+    .homepage {
+        padding-bottom: 100px;
+    }
+    .homepage .portrait {
+        display: none;
+    }
+ }
 
 /*
 .homepage img:hover {
@@ -124,6 +135,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 75px;
+    z-index: 1;
 }
 
 nav img {
@@ -148,18 +160,21 @@ ul li a {
     display: block;
     text-decoration: none;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: regular;
     color: black;
     padding-left: 20px;
     padding-right: 20px;
     line-height: 50px;
-    transition: 0.3s;
+    transition: 0.1s; 
 }
 
 ul li a:hover {
     font-weight: bold;
+    color: #c78b8f;
+    text-decoration: none;
 }
+
 
 @media screen and (max-width: 466px) {
     nav ul {
@@ -176,6 +191,7 @@ ul li a:hover {
     background-color: #FDE2E4;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
+    z-index: 2;
 }
 
 .social-bar a {
@@ -193,40 +209,28 @@ ul li a:hover {
 }
 
 /* about */
-
-.about {
-    width: 70%;
-    height: auto;
-    background-color:#FDE2E4;
-    margin-left: 5%;
-    margin-bottom: 60px;
-    padding: 20px;
-    border-radius: 20px;
-    z-index: 1;
-    position: relative;
-}
-.about h2 {
-    font-family: 'messapia';
-    font-weight: bold;
-}
-
-.about .mantra{
-    font-weight: bold;
-}
-
-.about img {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
-@media screen and (max-width: 994px) {
-    .practice {
-        display: none;
+    .about {
+        width: 70%;
+        height: auto;
+        background-color:#FDE2E4;
+        margin-left: 5%;
+        margin-bottom: 60px;
+        padding: 20px;
+        border-radius: 20px;
+        z-index: 1;
+        position: relative;
     }
-}
+    .about h2 {
+        font-family: 'messapia';
+        font-weight: bold;
+    }
+    
+    .about .mantra{
+        font-weight: bold;
+    }
+    
 
-@media screen and (min-width: 994px) {
-
+/*
     .practice {
         width: 72%;
         height: 230px;
@@ -237,18 +241,18 @@ ul li a:hover {
         top: 105%;
         left: 6%;
     }
-    
-    .practice img {
+    */
+    .about img {
         position: absolute;
-        right: 0px;
-        bottom: 0px;
-        height: 130px;
+        right: -30px;
+        bottom: -15px;
+        height: 100px;
         width: auto;
     }
 
-}
-/* resume */
-.resume {
+
+/* currently */
+.currently {
     width: 70%;
     height: auto;
     background-color:#DBE7E4;
@@ -260,53 +264,80 @@ ul li a:hover {
     position: relative;
     z-index: 1;
 }
-.resume h2 {
+.currently h2 {
     font-family: 'messapia';
     font-weight: bold;
 }
 
-.resume .resume-title {
+.currently .currently-title {
     font-weight: bold;
 }
 
-.resume .resume-left {
+.currently .currently-left {
     text-align: left;
 }
 
-.resume .resume-right {
+.currently .currently-right {
     text-align: right;
 }
 
-@media screen and (max-width: 994px) {
-    .resume-pic {
-        display: none;
-    }
+.currently .currently-title:link {
+    color: #5f867c;
 }
 
-@media screen and (min-width: 994px) {
-    .resume-pic {
-        width: 72%;
-        height: 600px;
+.currently .currently-title:visited {
+    color: #44615a;
+}
+
+.currently img {
+    position: absolute;
+    left: -30px;
+    bottom: -15px;
+    height: 100px;
+    width: auto;
+}
+@media screen and (max-width: 994px) {
+    .about {
+        width: 70%;
+        height: auto;
+        background-color:#FDE2E4;
+        margin-left: 15%;
         margin-bottom: 60px;
-        right: 7%;
-        background-color:transparent;
-        top: 135%;
-        z-index: 2;
-        position: absolute;
+        padding: 20px;
+        border-radius: 20px;
+        z-index: 1;
+        position: relative;
     }
     
-    .resume-pic img {
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        height: 130px;
-        width: auto;
+    .projects {
+        width: 70%;
+        height: auto;
+        background-color:#FDE2E4;
+        margin-left: 15%;
+        margin-bottom: 60px;
+        padding: 20px;
+        border-radius: 20px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .currently {
+        width: 70%;
+        height: auto;
+        background-color:#DBE7E4;
+        margin-left: 15%;
+        margin-bottom: 60px;
+        padding: 20px;
+        border-radius: 20px;
+        align-content: flex-end;
+        position: relative;
+        z-index: 1;
     }
 
 }
 
-/*projects 
-.about {
+/* about */
+.projects {
     width: 70%;
     height: auto;
     background-color:#FDE2E4;
@@ -314,14 +345,32 @@ ul li a:hover {
     margin-bottom: 60px;
     padding: 20px;
     border-radius: 20px;
+    z-index: 1;
+    position: relative;
 }
-.about h2 {
+.projects h2 {
     font-family: 'messapia';
     font-weight: bold;
 }
 
-.about .mantra{
-    font-weight: bold;
+.projects img {
+    position: absolute;
+    right: -30px;
+    bottom: -15px;
+    height: 100px;
+    width: auto;
 }
 
-*/
+.meet-me {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.meet-me a:link {
+    color: #c78b8f;
+}
+
+.meet-me a:visited {
+    color: #c78b8f;
+}
